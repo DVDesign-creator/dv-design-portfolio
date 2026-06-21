@@ -1,0 +1,236 @@
+(() => {
+  "use strict";
+
+  const CASES = [{"slug":"agro-rost","title":"Агро-Рост","category":"Полиграфия","type":"Презентационный каталог","year":"2026","image":"./img/projects__agro-rost__cover.png","imageAlt":"Обложка каталога продукции Агро-Рост","gallery":[{"src":"./img/projects__agro-rost__spread.png","alt":"Разворот каталога Агро-Рост о компании и масштабе поставок"}],"task":"Показать масштаб компании, направления работы, ассортимент продукции и преимущества для фермерских хозяйств, агрохолдингов и партнеров.","solution":"Создан светлый аграрный каталог с зелеными акцентами, крупными фотографиями, структурированными блоками, инфографикой и аккуратной журнальной версткой.","result":"Компания получила понятный презентационный инструмент для переговоров, выставок и коммуникации с B2B-клиентами."},{"slug":"rosenergoservice","title":"РосЭнергоСервис","category":"Полиграфия","type":"Презентационный каталог","year":"2026","image":"./img/projects__rosenergoservice__cover.png","imageAlt":"Разворот промышленного каталога РосЭнергоСервис","gallery":[{"src":"./img/projects__rosenergoservice__turbines.png","alt":"Разворот каталога РосЭнергоСервис о газовых турбинах"},{"src":"./img/projects__rosenergoservice__systems.png","alt":"Разворот каталога РосЭнергоСервис о системах регулирования"}],"task":"Упаковать производственный потенциал компании, инженерную экспертизу и направления поставок в понятный B2B-формат.","solution":"Разработана современная промышленная визуальная система: строгая сине-белая палитра, крупные технические изображения, карточки направлений, инфографика и модульная верстка.","result":"Каталог помогает быстрее объяснять сложную техническую информацию и усиливает доверие к компании как к производственному партнеру."},{"slug":"medved","title":"Медведь","category":"Полиграфия","type":"Каталог тактической экипировки","year":"2026","image":"./img/projects__medved__cover.png","imageAlt":"Открытый каталог тактической экипировки Медведь","gallery":[{"src":"./img/projects__medved__tactical.png","alt":"Разворот каталога Медведь с тактической экипировкой"},{"src":"./img/projects__medved__medical.png","alt":"Разворот каталога Медведь с медицинской одеждой"}],"task":"Структурировать информацию о компании, производственных возможностях и ассортименте продукции в деловом каталожном формате.","solution":"Создана сдержанная промышленная система с нейтральной палитрой, строгой типографикой, фирменной графикой и аккуратной журнальной версткой.","result":"Каталог стал удобным инструментом для презентации ассортимента корпоративным и государственным заказчикам."},{"slug":"bsk","title":"БСК","category":"Полиграфия","type":"Каталог ремонтных решений","year":"2026","image":"./img/projects__bsk__cover.png","imageAlt":"Комплект каталогов ремонтных решений БСК","gallery":[{"src":"./img/projects__bsk__styles.png","alt":"Разворот каталога БСК с вариантами интерьерных стилей"},{"src":"./img/projects__bsk__cost.png","alt":"Разворот каталога БСК с составом и стоимостью ремонта"}],"task":"Упростить выбор ремонтного решения для клиента через понятную структуру, стили интерьера, состав работ и ориентировочную стоимость.","solution":"Разработана чистая интерьерная визуальная система: крупные изображения, светлая палитра, зеленые акценты, карточки направлений и ценовые блоки.","result":"Каталог помогает клиенту быстрее сравнить варианты ремонта и выбрать подходящее решение по стилю, бюджету и составу работ."},{"slug":"natasha-lopatnikova","title":"Natasha Lopatnikova","category":"Полиграфия","type":"Каталог / editorial design","year":"2026","image":"./img/projects__natasha-lopatnikova__cover.png","imageAlt":"Открытый арт-каталог художницы Natasha Lopatnikova","description":"Спокойная редакционная система, в которой мокапы каталога и произведения художницы остаются главным визуальным акцентом.","gallery":[{"src":"./img/projects__natasha-lopatnikova__back.png","alt":"Обложка и оборот арт-каталога Natasha Lopatnikova"},{"src":"./img/projects__natasha-lopatnikova__bio.png","alt":"Биографический разворот арт-каталога Natasha Lopatnikova"}],"task":"Представить художницу и ее работы в спокойном галерейном формате, сохранив акцент на произведениях, тексте и визуальной чистоте издания.","solution":"Создана минималистичная редакционная система: светлая основа, широкие поля, строгая типографика, аккуратная сетка и крупные изображения живописных работ.","result":"Каталог формирует профессиональную подачу художницы и помогает представить работы коллекционерам, галереям и потенциальным покупателям."},{"slug":"noblelift","title":"Noblelift","category":"Полиграфия","type":"Каталог складской техники","year":"2026","image":"./img/projects__noblelift__cover.png","imageAlt":"Каталог складской техники Noblelift","gallery":[{"src":"./img/projects__noblelift__spread.png","alt":"Большой товарный разворот каталога Noblelift"}],"task":"Структурировать большой ассортимент складского оборудования и представить его в понятном формате для клиентов, дилеров и партнеров.","solution":"Разработана промышленная визуальная система: белая основа, оранжевые акценты, модульная сетка, товарные карточки, технические данные и структурированная подача ассортимента.","result":"Каталог помогает быстрее ориентироваться в линейке продукции и упрощает коммуникацию между компанией, клиентами и дилерами."},{"slug":"craft","title":"CRAFT","category":"Полиграфия","type":"Комплекс полиграфии","year":"2026","image":"./img/projects__craft__cover.png","imageAlt":"Комплект листовок индустриального парка CRAFT","gallery":[{"src":"./img/projects__craft__cards.png","alt":"Фирменные визитки индустриального парка CRAFT"},{"src":"./img/projects__craft__rollup.png","alt":"Ролл-ап индустриального парка CRAFT"}],"task":"Показать возможности индустриальной площадки для размещения и хранения спецтехники, привлечения арендаторов и коммуникации с партнерами.","solution":"Создана единая индустриальная система для листовок, ролл-апа и визиток: графитовая палитра, зеленый акцент, крупные фото объекта, иконки преимуществ и QR-код.","result":"Компания получила комплект печатных материалов для офлайн-презентации площадки и быстрого перехода клиентов к информации."},{"slug":"aquastok","title":"AquaStok","category":"Айдентика","type":"Айдентика бренда","year":"2026","image":"./img/projects__aquastok__cover.png","imageAlt":"Фирменный буклет AquaStok в раскрытом виде","gallery":[{"src":"./img/projects__aquastok__logo.png","alt":"Фирменный логотип AquaStok"},{"src":"./img/projects__aquastok__applications.png","alt":"Применение айдентики AquaStok на производстве и деловых носителях"},{"src":"./img/projects__aquastok__packages.png","alt":"Фирменные пакеты AquaStok"}],"task":"Создать узнаваемый и надежный образ бренда для производственной компании в сфере благоустройства и инженерной инфраструктуры.","solution":"Разработана айдентика бренда: логотип, фирменная красно-синяя палитра, типографика, графические элементы и система применения на деловой полиграфии, сувенирной продукции и производственных носителях.","result":"Бренд получил целостную визуальную систему, которая легко масштабируется от документов и каталогов до формы, продукции и производственной среды."},{"slug":"moto-hub","title":"Moto Hub","category":"Айдентика","type":"Айдентика мотоцентра","year":"2026","image":"./img/projects__moto-hub__cover.png","imageAlt":"Сайт Moto Hub на экране ноутбука","gallery":[{"src":"./img/projects__moto-hub__logo.png","alt":"Динамичный логотип Moto Hub"},{"src":"./img/projects__moto-hub__landing.png","alt":"Дизайн главной страницы мотоцентра Moto Hub"},{"src":"./img/projects__moto-hub__travel.png","alt":"Страница туристического направления Moto Hub"},{"src":"./img/projects__moto-hub__marks.png","alt":"Система фирменных знаков Moto Hub Montenegro"},{"src":"./img/projects__moto-hub__qr-black.png","alt":"Черные QR-стикеры Moto Hub Montenegro"},{"src":"./img/projects__moto-hub__qr-orange.png","alt":"Оранжевые QR-стикеры Moto Hub Montenegro"},{"src":"./img/projects__moto-hub__logo-variants.png","alt":"Цветовые варианты логотипа Moto Hub"},{"src":"./img/projects__moto-hub__service-prices.png","alt":"Прайс-лист сервисных работ Moto Hub"},{"src":"./img/projects__moto-hub__shirt-orange.png","alt":"Оранжевая фирменная форма Moto Hub"},{"src":"./img/projects__moto-hub__shirt-black.png","alt":"Черная фирменная форма Moto Hub"},{"src":"./img/projects__moto-hub__shirt-white.png","alt":"Белая фирменная форма Moto Hub"},{"src":"./img/projects__moto-hub__flag.png","alt":"Рекламный флаг Moto Hub"}],"task":"Создать яркий, динамичный и запоминающийся образ бренда для мотогаража и сервисного пространства.","solution":"Сформирована агрессивная мотостилистика с оранжево-черной палитрой, динамичной типографикой, графикой скорости, пламенем и техническими акцентами.","result":"Айдентика адаптирована под digital, мерч, униформу, флаги и офлайн-носители, создавая узнаваемый образ мотоцентра."},{"slug":"enzhi-pro","title":"ЭНЖИ-ПРО","category":"Айдентика","type":"Айдентика инженерной компании","year":"2026","image":"./img/projects__enzhi-pro__cover.png","imageAlt":"Фирменная папка инженерной компании ЭНЖИ-ПРО","gallery":[{"src":"./img/projects__enzhi-pro__presentation-cover.png","alt":"Презентационная обложка ЭНЖИ-ПРО с инженером"},{"src":"./img/projects__enzhi-pro__brand-cover.png","alt":"Фирменная обложка ЭНЖИ-ПРО в инженерной стилистике"},{"src":"./img/projects__enzhi-pro__logo-concept.png","alt":"Концепция логотипа ЭНЖИ-ПРО на основе инженерных линий"},{"src":"./img/projects__enzhi-pro__logo-orange.png","alt":"Белый логотип ЭНЖИ-ПРО на оранжевом фоне"},{"src":"./img/projects__enzhi-pro__character.png","alt":"Фирменный персонаж технологичный муравей ЭНЖИ-ПРО"},{"src":"./img/projects__enzhi-pro__character-system.png","alt":"Система применения фирменного персонажа ЭНЖИ-ПРО"},{"src":"./img/projects__enzhi-pro__character-detail.png","alt":"Детальная презентация фирменного персонажа ЭНЖИ-ПРО"},{"src":"./img/projects__enzhi-pro__pen.png","alt":"Фирменная ручка ЭНЖИ-ПРО"}],"task":"Создать современный технологичный фирменный стиль для компании, которая объединяет электрику, сантехнику, вентиляцию, кондиционирование и умный дом.","solution":"Разработана цельная визуальная система: логотип с образом инженерной сети, фирменная оранжевая палитра, графические элементы в стиле схем и соединений, а также фирменный персонаж — технологичный муравей.","result":"Компания получила выразительную айдентику, которая передает комплексный инженерный подход и может использоваться на презентациях, сайте, документах и рекламных носителях."},{"slug":"tc-dom","title":"ТЦ «ДОМ»","category":"Презентации","type":"Коммерческое предложение","year":"2026","image":"./img/projects__tc-dom__cover.png","imageAlt":"Обложка коммерческого предложения торгового центра ДОМ","gallery":[{"src":"./img/projects__tc-dom__about.png","alt":"Слайд коммерческого предложения о торговом центре ДОМ"},{"src":"./img/projects__tc-dom__advantages.png","alt":"Слайд с преимуществами торгового пространства ДОМ"},{"src":"./img/projects__tc-dom__location.png","alt":"Слайд с преимуществами локации торгового центра ДОМ"},{"src":"./img/projects__tc-dom__terms.png","alt":"Слайд с условиями аренды в торговом центре ДОМ"},{"src":"./img/projects__tc-dom__contact.png","alt":"Контактный слайд коммерческого предложения торгового центра ДОМ"}],"task":"Сформировать убедительную презентацию аренды торгового помещения для бизнеса.","solution":"Разработана чистая презентация с акцентом на архитектуру объекта, преимущества локации, поток целевой аудитории, транспортную доступность и инфраструктуру.","result":"Презентация помогает потенциальным арендаторам быстро оценить объект и принять решение о дальнейшем диалоге."},{"slug":"modul-klik","title":"Модуль Клик","category":"Презентации","type":"Каталог моделей","year":"2026","image":"./img/projects__modul-klik__cover.png","imageAlt":"Обложка каталога модульных бань Модуль Клик","gallery":[{"src":"./img/projects__modul-klik__production.png","alt":"Слайд каталога о производстве Модуль Клик"},{"src":"./img/projects__modul-klik__eco11.png","alt":"Карточка модели модульной бани ЭКО 11"},{"src":"./img/projects__modul-klik__eco17.png","alt":"Карточка модели модульной бани ЭКО 17"},{"src":"./img/projects__modul-klik__scandi.png","alt":"Карточка модели модульной бани Сканди"},{"src":"./img/projects__modul-klik__contact.png","alt":"Контактный слайд каталога Модуль Клик"}],"task":"Показать ассортимент модульных бань, раскрыть особенности каждой модели, планировки, комплектации и стоимость.","solution":"Создана природная визуальная система с акцентом на готовый продукт: крупные рендеры бань, лесной фон, зеленая палитра, карточки характеристик, планировки и QR-коды.","result":"Каталог помогает клиенту быстрее сравнить модели и выбрать подходящий вариант по размеру, комплектации и бюджету."},{"slug":"aqualab","title":"Оборудование AquaLab","category":"Презентации","type":"Каталог-презентация","year":"2026","image":"./img/projects__aqualab__cover.png","imageAlt":"Титульный слайд презентации оборудования AquaLab","gallery":[{"src":"./img/projects__aqualab__applications.png","alt":"Слайд AquaLab с областями применения оборудования"},{"src":"./img/projects__aqualab__requirements.png","alt":"Слайд AquaLab с нормативными требованиями к воде"},{"src":"./img/projects__aqualab__type1.png","alt":"Слайд AquaLab о системе получения сверхчистой воды"},{"src":"./img/projects__aqualab__type2.png","alt":"Слайд AquaLab о системе получения дистиллированной воды"},{"src":"./img/projects__aqualab__qr.png","alt":"Финальный слайд AquaLab с QR-кодом"}],"task":"Представить линейку оборудования, области применения, нормативные требования и технические особенности систем.","solution":"Создана чистая медицинско-лабораторная визуальная система: белый фон, фирменный синий цвет, крупные продуктовые изображения, 3D-иконки, инфографика, QR-код и молекулярные элементы.","result":"Презентация упрощает знакомство с оборудованием и помогает перевести клиента к консультации или изучению сайта."},{"slug":"azovrus","title":"Азоврус Холдинг","category":"Презентации","type":"Стратегия развития","year":"2026","image":"./img/projects__azovrus__cover.png","imageAlt":"Обложка стратегии развития Азоврус Холдинг","gallery":[{"src":"./img/projects__azovrus__mission.png","alt":"Слайд стратегии с миссией Азоврус Холдинг"},{"src":"./img/projects__azovrus__model.png","alt":"Слайд с функциональной моделью Азоврус Холдинг"},{"src":"./img/projects__azovrus__map.png","alt":"Слайд с картой развития сети АЗС Азоврус Холдинг"},{"src":"./img/projects__azovrus__hotel.png","alt":"Стратегический слайд гостиничного проекта Азоврус Холдинг"},{"src":"./img/projects__azovrus__logistics.png","alt":"Стратегический слайд логистического центра Азоврус Холдинг"}],"task":"Системно представить стратегию развития холдинга на 5 лет, включая ключевые проекты, финансовые цели, модель масштабирования и управленческие задачи.","solution":"Разработана строгая темная визуальная система с крупной типографикой, картами, графиками роста, фокус-слайдами по проектам и акцентом на инвестиционную убедительность.","result":"Презентация помогает представить стратегию холдинга в структурированном и убедительном формате для партнеров, инвесторов и управленческой команды."},{"slug":"metallstroypro","title":"МеталлСтройПроект","category":"Презентации","type":"Инвест-презентация","year":"2025","image":"./img/projects__metallstroypro__cover.png","imageAlt":"Обложка презентации МеталлСтройПроект","gallery":[{"src":"./img/projects__metallstroypro__company.png","alt":"Слайд о компании МеталлСтройПроект"},{"src":"./img/projects__metallstroypro__advantages.png","alt":"Слайд с преимуществами МеталлСтройПроект"},{"src":"./img/projects__metallstroypro__map.png","alt":"Карта реализованных объектов МеталлСтройПроект"},{"src":"./img/projects__metallstroypro__guarantees.png","alt":"Слайд с гарантиями МеталлСтройПроект"},{"src":"./img/projects__metallstroypro__contact.png","alt":"Контактный слайд МеталлСтройПроект"}],"task":"Упаковать информацию о компании, производственных мощностях, объектах, оборудовании и преимуществах для партнеров и инвесторов.","solution":"Разработан индустриальный стиль презентации: графитово-желтая палитра, крупные акценты, инфографика, карта проектов, иконки направлений и единая система слайдов.","result":"Презентация помогает компании выглядеть масштабно, структурированно и убедительно в коммуникации с партнерами."},{"slug":"dessert-packaging","title":"Серия упаковки для десертов","category":"Полиграфия","type":"Упаковка / иллюстрация","year":"2026","image":"./img/projects__dessert-packaging__cover.png","imageAlt":"Иллюстрированная упаковка десертов со вкусом пряного напитка","description":"Иллюстративная серия коробок для десертов, объединенная единым форматом и теплой гастрономической атмосферой.","gallery":[{"src":"./img/projects__dessert-packaging__mulled-wine-angle.png","alt":"Упаковка десерта с пряным напитком в перспективе"},{"src":"./img/projects__dessert-packaging__strawberry-angle.png","alt":"Клубничная упаковка десерта в перспективе"},{"src":"./img/projects__dessert-packaging__strawberry-front.png","alt":"Фронтальный вид клубничной упаковки десерта"},{"src":"./img/projects__dessert-packaging__cinnamon-angle.png","alt":"Упаковка десерта с корицей в перспективе"}],"task":"Разработать визуальную серию упаковки с разными вкусами и настроениями.","solution":"Создана серия коробок с иллюстративными сюжетами, теплыми гастрономическими образами и декоративными деталями. Каждый дизайн сохраняет единый формат, но отличается цветом, композицией и эмоциональным характером.","result":"Линейка воспринимается как единая коллекция и позволяет быстро различать вкусы на витрине."},{"slug":"cartech-ad-series","title":"CARTECH — рекламная серия для автозапчастей","category":"Полиграфия","type":"POS-материалы / рекламные макеты","year":"2026","image":"./img/projects__cartech__cover.png","imageAlt":"Рекламный макет CARTECH для масляного фильтра","description":"Масштабируемая рекламная серия для разных категорий автомобильных комплектующих.","gallery":[{"src":"./img/projects__cartech__lamps.png","alt":"Рекламный макет CARTECH для габаритных ламп"},{"src":"./img/projects__cartech__pumps.png","alt":"Рекламный макет CARTECH для помпы двигателя"},{"src":"./img/projects__cartech__bearings.png","alt":"Рекламный макет CARTECH для подшипника ступицы"},{"src":"./img/projects__cartech__oil-filter-yellow.png","alt":"Рекламный макет CARTECH для желтого масляного фильтра"},{"src":"./img/projects__cartech__air-filter.png","alt":"Рекламный макет CARTECH для воздушного фильтра"}],"task":"Оформить линейку рекламных материалов для разных категорий автотоваров.","solution":"Разработана модульная система с крупной типографикой, акцентом на продукт, техническими преимуществами и QR-переходом. Структура легко масштабируется под новые товары.","result":"Компания получила узнаваемый комплект POS-материалов с единым принципом подачи ассортимента."},{"slug":"a2-group-presentation","title":"A2 Group — презентация проектной компании","category":"Презентации","type":"Презентация / B2B","year":"2026","image":"./img/projects__a2-group__cover.png","imageAlt":"Обложка презентации проектной компании A2 Group","description":"Строгая B2B-презентация, раскрывающая экспертизу, направления и процесс проектирования компании.","gallery":[{"src":"./img/projects__a2-group__directions.png","alt":"Слайд A2 Group с направлениями проектирования"},{"src":"./img/projects__a2-group__approach.png","alt":"Слайд A2 Group с описанием подхода"},{"src":"./img/projects__a2-group__stages.png","alt":"Слайд A2 Group с этапами проектирования"},{"src":"./img/projects__a2-group__medical.png","alt":"Слайд A2 Group о проектировании медицинских учреждений"},{"src":"./img/projects__a2-group__industrial.png","alt":"Слайд A2 Group о проектировании промышленных объектов"},{"src":"./img/projects__a2-group__team.png","alt":"Слайд A2 Group о проектной команде"},{"src":"./img/projects__a2-group__clients.png","alt":"Слайд A2 Group с реализованными объектами и клиентами"},{"src":"./img/projects__a2-group__contact.png","alt":"Контактный слайд презентации A2 Group"}],"task":"Создать строгую и профессиональную презентацию для строительной и проектной компании.","solution":"Собрана минималистичная редакционная система с крупными заголовками, спокойной палитрой, архитектурными изображениями, инфографикой и аккуратной сеткой.","result":"Презентация формирует надежный экспертный образ и последовательно объясняет компетенции компании B2B-аудитории."},{"slug":"modul-klik-premium","title":"Модуль Клик — каталог бань премиум-класса","category":"Презентации","type":"Каталог / презентация","year":"2026","image":"./img/projects__modul-klik-premium__cover.png","imageAlt":"Обложка каталога премиальных бань Модуль Клик","description":"Каталог модельной линейки с акцентом на комплектацию, стоимость и удобное сравнение форматов.","gallery":[{"src":"./img/projects__modul-klik-premium__production.png","alt":"Слайд каталога о производстве Модуль Клик"},{"src":"./img/projects__modul-klik-premium__process.png","alt":"Слайд каталога с процессом работы Модуль Клик"},{"src":"./img/projects__modul-klik-premium__barn-11.png","alt":"Карточка премиальной бани Барн 11Т"},{"src":"./img/projects__modul-klik-premium__loft-11.png","alt":"Карточка премиальной бани Лофт 11"},{"src":"./img/projects__modul-klik-premium__loft-25.png","alt":"Карточка премиальной бани Лофт 25"},{"src":"./img/projects__modul-klik-premium__barn-13.png","alt":"Карточка премиальной бани Барн 13Т"},{"src":"./img/projects__modul-klik-premium__loft-11t.png","alt":"Карточка премиальной бани Лофт 11Т"},{"src":"./img/projects__modul-klik-premium__specification.png","alt":"Слайд с премиальной комплектацией модульных бань"},{"src":"./img/projects__modul-klik-premium__contact.png","alt":"Финальный слайд каталога Модуль Клик"}],"task":"Оформить каталог модульных бань с акцентом на премиальность, комплектацию и понятное сравнение моделей.","solution":"Разработана темная визуальная система с зелеными акцентами, крупными рендерами, карточками характеристик, блоками стоимости и преимуществ.","result":"Каталог помогает быстро сравнить модели, комплектацию и бюджет, сокращая путь клиента к выбору."},{"slug":"smoke-house-poster","title":"Smoke House — рекламный постер","category":"Полиграфия","type":"Постер / SMM","year":"2026","image":"./img/projects__smoke-house__cover.png","imageAlt":"Коллажный рекламный постер Smoke House","description":"Атмосферный коллажный визуал для коммуникации табачного магазина в социальных сетях.","gallery":[],"task":"Создать яркий визуал для табачного магазина с провокационной атмосферой и акцентом на продуктовый мир бренда.","solution":"Собрана коллажная композиция с дымом, городским фоном, предметами и фирменным знаком. Контраст света и фактур поддерживает драматичный характер материала.","result":"Получен выразительный промо-материал, адаптированный для публикации в digital-каналах."},{"slug":"summer-education-poster","title":"Постер для образовательного интенсива","category":"Полиграфия","type":"Афиша / наружная реклама","year":"2026","image":"./img/projects__summer-intensive__cover.png","imageAlt":"Голубая афиша образовательного события на стеклянном фасаде","description":"Информационный постер с ясной иерархией, подготовленный для размещения в городской среде.","gallery":[],"task":"Оформить афишу для детского образовательного мероприятия.","solution":"Создан легкий постер с ярким голубым фоном, крупной центральной формой, фотографией объекта и чистой информационной структурой. Макет адаптирован под размещение на стекле.","result":"Афиша сохраняет читаемость на расстоянии и заметно работает в насыщенном общественном пространстве."},{"slug":"standart-antifreeze-labels","title":"Standart Antifreeze — серия этикеток","category":"Полиграфия","type":"Этикетка / упаковка","year":"2026","image":"./img/projects__standart-antifreeze__cover.png","imageAlt":"Красная этикетка антифриза Standart Antifreeze","description":"Серия технических этикеток с цветовым кодированием продуктовых вариантов.","gallery":[{"src":"./img/projects__standart-antifreeze__yellow.png","alt":"Желтая этикетка Standart Antifreeze"},{"src":"./img/projects__standart-antifreeze__green.png","alt":"Зеленая этикетка Standart Antifreeze"}],"task":"Разработать серию этикеток для антифриза с разными цветовыми кодами.","solution":"Создана агрессивная техническая композиция с крупным названием, ледяной фактурой, контрастными цветовыми зонами и информационными блоками.","result":"Продукты легко различаются по цвету и одновременно воспринимаются как единая линейка."},{"slug":"moscow-animation-festival","title":"Московский фестиваль анимации","category":"Айдентика","type":"Event design / оформление мероприятия","year":"2026","image":"./img/projects__animation-festival__cover.png","imageAlt":"Главный визуал Московского фестиваля анимации","description":"Событийная визуальная система, развернутая от основной афиши до сцены, зон активности и печатных материалов.","gallery":[{"src":"./img/projects__animation-festival__stage.png","alt":"Оформление сцены Московского фестиваля анимации"},{"src":"./img/projects__animation-festival__screen.png","alt":"Главный экран сцены фестиваля анимации"},{"src":"./img/projects__animation-festival__zones.png","alt":"Цветные зоны активностей фестиваля анимации"},{"src":"./img/projects__animation-festival__installation.png","alt":"Монтаж большой фотозоны фестиваля анимации"},{"src":"./img/projects__animation-festival__entrance.png","alt":"Объемная входная конструкция фестиваля анимации"},{"src":"./img/projects__animation-festival__print.png","alt":"Печатные материалы участника фестиваля анимации"}],"task":"Подготовить визуальные материалы для детского фестиваля анимации.","solution":"Разработана яркая событийная айдентика с персонажами, крупной сценической графикой, фотозонами и печатными материалами. Система последовательно перенесена в реальные носители.","result":"Мероприятие получило цельную узнаваемую среду, работающую на сцене, навигации и в зонах активности."},{"slug":"the-care-car-shampoo","title":"The CARE — этикетка автошампуня","category":"Полиграфия","type":"Этикетка / автохимия","year":"2026","image":"./img/projects__the-care__cover.png","imageAlt":"Темная технологичная этикетка автошампуня The CARE","description":"Этикетка профессионального средства для бесконтактной мойки с акцентом на технологичность продукта.","gallery":[],"task":"Оформить упаковку профессионального средства для бесконтактной мойки.","solution":"Создана темная технологичная этикетка с крупным названием, автомобильной фотографией, водной динамикой и понятной системой пиктограмм.","result":"Дизайн уверенно выделяет продукт и быстро передает профессиональный сценарий применения."},{"slug":"domca-heat-transfer-label","title":"DOMCA — этикетка теплоносителя","category":"Полиграфия","type":"Этикетка / технический продукт","year":"2026","image":"./img/projects__domca__cover.png","imageAlt":"Информационная этикетка теплоносителя DOMCA","description":"Техническая этикетка, которая структурирует состав, эксплуатационные параметры и правила применения продукта.","gallery":[],"task":"Разработать информационную этикетку для теплоносителя.","solution":"Создана чистая техническая верстка с красным акцентом, схемой отопления, таблицей разведения и важными эксплуатационными данными.","result":"Сложная информация стала понятнее для покупателя и удобнее для использования непосредственно на упаковке."},{"slug":"trt-camp-posters","title":"TRT Camp — спортивные афиши","category":"Полиграфия","type":"Афиша / спорт","year":"2026","image":"./img/projects__trt-camp__cover.png","imageAlt":"Красно-черная спортивная афиша TRT Camp","description":"Динамичная серия рекламных материалов для тренировочного лагеря по мотоспорту.","gallery":[{"src":"./img/projects__trt-camp__schedule.png","alt":"Светлая афиша TRT Camp с расписанием тренировочных выездов"}],"task":"Разработать динамичные рекламные материалы для тренировочного лагеря.","solution":"Использована контрастная черно-бело-красная графика, крупная типографика, диагонали, грязевая фактура и спортивные фотографии.","result":"Серия передает скорость и экстремальный характер события, оставаясь информативной для участников."}];
+  const NAV_LINKS = [
+    ["Главная", "top"],
+    ["Услуги", "services"],
+    ["Кейсы", "cases"],
+    ["Команда", "team"],
+    ["О нас", "approach"],
+    ["Контакты", "contact"],
+  ];
+
+  const escapeHtml = (value = "") => String(value)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+
+  const closeIcon = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 7l10 10M17 7 7 17" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>';
+  const menuIcon = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 8h14M5 16h14" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>';
+
+  function createMobileNavigation(headerWrap) {
+    const nav = document.createElement("nav");
+    nav.className = "mobile-nav vanilla-mobile-nav";
+    nav.setAttribute("aria-label", "Мобильная навигация");
+    nav.hidden = true;
+    nav.innerHTML = `
+      <div class="mobile-nav__meta"><span>DV / NAVIGATION</span><span>2026</span></div>
+      ${NAV_LINKS.map(([label, id], index) => `
+        <a href="#${id}"${id === "top" ? ' class="is-active" aria-current="page"' : ""}>
+          <small>0${index + 1}</small><span>${label}</span><i>↗</i>
+        </a>`).join("")}
+    `;
+    headerWrap.append(nav);
+    return nav;
+  }
+
+  function initializeNavigation() {
+    const headerWrap = document.querySelector(".header-wrap");
+    const header = document.querySelector(".header");
+    const menuButton = document.querySelector(".menu-button");
+    if (!headerWrap || !header || !menuButton) return;
+
+    header.animate(
+      [{ opacity: 0, transform: "translateY(-18px)" }, { opacity: 1, transform: "translateY(0)" }],
+      { duration: 750, easing: "cubic-bezier(.22,1,.36,1)", fill: "both" },
+    );
+
+    const mobileNav = createMobileNavigation(headerWrap);
+    let menuOpen = false;
+    const setMenu = (open) => {
+      menuOpen = open;
+      mobileNav.hidden = !open;
+      document.body.classList.toggle("menu-open", open);
+      menuButton.setAttribute("aria-expanded", String(open));
+      menuButton.setAttribute("aria-label", open ? "Закрыть меню" : "Открыть меню");
+      menuButton.innerHTML = open ? closeIcon : menuIcon;
+      if (open) {
+        mobileNav.animate(
+          [{ opacity: 0, transform: "translateY(-18px)", filter: "blur(8px)" }, { opacity: 1, transform: "none", filter: "blur(0)" }],
+          { duration: 340, easing: "cubic-bezier(.22,1,.36,1)", fill: "both" },
+        );
+      }
+    };
+
+    menuButton.addEventListener("click", () => setMenu(!menuOpen));
+    mobileNav.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => setMenu(false)));
+
+    const sectionOrder = ["top", "approach", "services", "cases", "team", "contact"];
+    const updateNavigation = () => {
+      headerWrap.classList.toggle("is-compact", window.scrollY > 36);
+      const marker = window.scrollY + window.innerHeight * 0.34;
+      let current = "top";
+      sectionOrder.forEach((id) => {
+        const section = document.getElementById(id);
+        if (section && section.offsetTop <= marker) current = id;
+      });
+      document.querySelectorAll(".desktop-nav a, .mobile-nav a").forEach((link) => {
+        const active = link.getAttribute("href") === `#${current}`;
+        link.classList.toggle("is-active", active);
+        if (active) link.setAttribute("aria-current", "page");
+        else link.removeAttribute("aria-current");
+      });
+    };
+    updateNavigation();
+    window.addEventListener("scroll", updateNavigation, { passive: true });
+    window.addEventListener("resize", updateNavigation);
+  }
+
+  function openCase(item) {
+    const modal = document.createElement("div");
+    modal.className = "case-modal vanilla-case-modal";
+    modal.setAttribute("data-lenis-prevent", "");
+    modal.innerHTML = `
+      <div class="case-modal__panel" role="dialog" aria-modal="true" aria-labelledby="case-title">
+        <button class="case-modal__close" type="button" aria-label="Закрыть">${closeIcon}</button>
+        <div class="case-modal__visual">
+          <img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.imageAlt)}">
+        </div>
+        <div class="case-modal__content">
+          <div class="case-modal__meta"><span>${escapeHtml(item.category)}</span><span>${escapeHtml(item.type)}</span><span>${escapeHtml(item.year)}</span></div>
+          <h3 id="case-title">${escapeHtml(item.title)}</h3>
+          ${item.description ? `<p class="case-modal__summary">${escapeHtml(item.description)}</p>` : ""}
+          <div class="case-modal__details">
+            <div><span>01 / Задача</span><p>${escapeHtml(item.task)}</p></div>
+            <div><span>02 / Решение</span><p>${escapeHtml(item.solution)}</p></div>
+            <div><span>03 / Результат</span><p>${escapeHtml(item.result)}</p></div>
+          </div>
+          ${item.gallery.length ? `
+            <div class="case-modal__gallery-wrap">
+              <div class="case-modal__gallery-heading"><span>04 / Визуальная система</span><span>${item.gallery.length} материалов</span></div>
+              <div class="case-modal__gallery">
+                ${item.gallery.map((image, index) => `
+                  <figure class="case-modal__gallery-item">
+                    <img src="${escapeHtml(image.src)}" loading="lazy" alt="${escapeHtml(image.alt)}">
+                    <figcaption>0${index + 1}</figcaption>
+                  </figure>`).join("")}
+              </div>
+            </div>` : ""}
+        </div>
+      </div>`;
+
+    const closeButton = modal.querySelector(".case-modal__close");
+    const close = () => {
+      document.removeEventListener("keydown", onKeyDown);
+      modal.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 220, easing: "ease" }).finished
+        .then(() => modal.remove());
+      document.body.classList.remove("modal-open");
+      document.documentElement.style.overflow = "";
+      document.body.style.overflow = "";
+    };
+    const onKeyDown = (event) => { if (event.key === "Escape") close(); };
+
+    modal.addEventListener("click", (event) => { if (event.target === modal) close(); });
+    closeButton.addEventListener("click", close);
+    document.addEventListener("keydown", onKeyDown);
+    document.body.append(modal);
+    document.body.classList.add("modal-open");
+    document.documentElement.style.overflow = "hidden";
+    document.body.style.overflow = "hidden";
+    closeButton.focus();
+  }
+
+  function initializeCases() {
+    const cards = [...document.querySelectorAll(".case-card")];
+    const caseMap = new Map(CASES.map((item) => [item.slug, item]));
+    cards.forEach((card) => {
+      const item = caseMap.get(card.dataset.slug);
+      if (!item) return;
+      card.setAttribute("role", "button");
+      card.setAttribute("tabindex", "0");
+      card.addEventListener("click", () => openCase(item));
+      card.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          openCase(item);
+        }
+      });
+    });
+
+    const filters = [...document.querySelectorAll(".filters button")];
+    const grid = document.querySelector(".cases-grid");
+    let empty = null;
+    filters.forEach((button) => button.addEventListener("click", () => {
+      const filter = button.textContent.trim();
+      filters.forEach((item) => {
+        item.classList.toggle("is-active", item === button);
+        item.querySelector("i")?.remove();
+      });
+      button.append(document.createElement("i"));
+
+      let visibleCount = 0;
+      cards.forEach((card) => {
+        const item = caseMap.get(card.dataset.slug);
+        const visible = filter === "Все"
+          || (filter === "Каталоги" && item.type.toLowerCase().includes("каталог"))
+          || item.category === filter;
+        card.hidden = !visible;
+        if (visible) visibleCount += 1;
+      });
+
+      empty?.remove();
+      empty = null;
+      if (!visibleCount && grid) {
+        empty = document.createElement("div");
+        empty.className = "cases-empty";
+        empty.innerHTML = "<span>WEB / IN PROGRESS</span><h3>Digital-кейсы готовим к публикации</h3><p>А пока можем показать релевантные работы лично — напишите нам.</p>";
+        grid.append(empty);
+      }
+    }));
+  }
+
+  function initializeMotion() {
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const targets = document.querySelectorAll(
+      ".section-heading, .approach-grid > div, .services-list > div, .case-card, .process-row, .team-grid > div, .contact__panel",
+    );
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.animate(
+          [{ opacity: 0, transform: "translateY(26px)", filter: "blur(7px)" }, { opacity: 1, transform: "none", filter: "blur(0)" }],
+          { duration: 800, easing: "cubic-bezier(.22,1,.36,1)", fill: "both" },
+        );
+        observer.unobserve(entry.target);
+      });
+    }, { rootMargin: "0px 0px -70px" });
+    targets.forEach((target) => observer.observe(target));
+
+    const ambient = document.querySelector(".ambient__orbits");
+    window.addEventListener("scroll", () => {
+      if (!ambient) return;
+      const progress = window.scrollY / Math.max(document.documentElement.scrollHeight - innerHeight, 1);
+      ambient.style.transform = `translateY(${Math.round(progress * 240)}px) rotate(${(progress * 8).toFixed(2)}deg)`;
+    }, { passive: true });
+  }
+
+  function initializeCardGlow() {
+    document.querySelectorAll(".glass-card").forEach((card) => {
+      card.addEventListener("pointermove", (event) => {
+        const rect = card.getBoundingClientRect();
+        card.style.setProperty("--mouse-x", `${event.clientX - rect.left}px`);
+        card.style.setProperty("--mouse-y", `${event.clientY - rect.top}px`);
+      });
+    });
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    initializeNavigation();
+    initializeCases();
+    initializeMotion();
+    initializeCardGlow();
+  });
+})();
